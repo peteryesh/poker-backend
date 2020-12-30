@@ -7,8 +7,7 @@ HEARTS = 2
 SPADES = 3
 
 class Deck:
-    def __init__(self, game):
-        self.game = game
+    def __init__(self):
         self.default = {
             CLUBS: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
             DIAMONDS: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
