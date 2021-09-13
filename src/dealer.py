@@ -65,7 +65,7 @@ def create_app(poker_url):
             cards = []
             if len(player["cards"]) > 0:
                 for key in player["cards"]:
-                    if show_cards:
+                    if show_cards and player["status"] > 2:
                         cards.append(player["cards"][key])
                     else:
                         cards.append({"value": None, "suit": None, "revealed": False})
